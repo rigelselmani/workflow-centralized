@@ -1,44 +1,38 @@
-<DOCTYPE html>
-  <html>
-
-  <head>
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Soccer GIFtastic</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-      <link rel="stylesheet" type="text/css" media="screen" href="assets/css/resset.css" />
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-  </head>
-
-  <body>
-      <div class="container">
-          <h1>Soccer Player GIFtastic!!!</h1>
-          <p><i> Click ADD your fav soccer player GIFs</i></p>
-          <!-- next div for button -->
-          <div class="row">
-              <div class="display-buttons"></div>
-          </div>
-          <!-- form and submit buttons -->
-          <div class="row">
-              <div class="col-md-12">
-                  <form id="player-form">
-                      <label for="player-input"><strong>ADD a Soccer Players.</strong></label><br>
-                      <input type="text" id="player-input">
-                      <input id="subPress" type="submit" value="Submit" class="btn btn-default">
-                  </form>
-              </div>
-          </div>
-          <!-- calls from api -->
-          <div class="row">
-              <div class="col-md-12" id="player-view"></div>
-          </div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Actions Gifs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/resset.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+          <h1>Actions Search</h1>
+        </div>
       </div>
-
-
-     
-      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-      <script src="assets/game.js"></script>
-  </body>
-
-  </html>
+    <div id="gifButtonsView" class="container">
+    </div>
+    <div class="container">
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <div id="gifsView"></div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <form id="gif-form" role="form">
+                <h2><legend>Action Submission</legend></h2>
+                <div class="form-group">
+                    <label for="action-input">Add your action below</label>
+                    <input type="text" id="action-input">
+                </div>
+                <input id="addGif" type="submit" value="Add your action" class="btn btn-primary">
+                <input id="removeGif" type="submit" value="Remove last action" class="btn btn-primary">
+            </form>    
+        </div>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/game.js"></script>
+</body>
+</html>

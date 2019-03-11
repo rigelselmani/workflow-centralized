@@ -1,52 +1,24 @@
-body {
-	background: url(../images/bnredshows.jpg) center center fixed;
-	font-family: 'Kaushan Script', cursive;
+img { 
+    height: 150px;
+    width: 150px;
 }
-
-
-* {
-	box-sizing: border-box;
-}
-
-
 .btn {
-	margin: 10px;
-	opacity: .8;
-	background-color: black;
-	border-color: red;
+    margin: 3px;
+    background-color: #71e959;
+    border-color: rgb(229, 173, 173);
 }
-
-.jumbotron {
-	color: red;
-	margin-bottom: auto;
-	padding-bottom: 20px;
-	padding-top: 25px;
-	margin-right: 10%;
-	margin-left: 10%;
-	text-align: center;
-	opacity: .6;
+.gifDiv{
+    float: left;
+    margin: 3px;
+}
+.container {
 	background-color: #fff;
-	margin: 0 auto;
+	opacity: 0.8;
+	padding: 20px;
 }
-
-
-label {
-	color: red;
-	font-size: 25px;
-	margin-right: 10px;
+.jumbotron {
+    background-color: royalblue;
 }
-
-p {
-	color: red;
-	font-size: 16px;
-}
-
-audio {
-	display: none;
-}
-
-div1 {
-	display: inline-block;
-	float: left;
-	margin: 10px;
+.jumbotron .h1{
+    text-align: right;
 }
